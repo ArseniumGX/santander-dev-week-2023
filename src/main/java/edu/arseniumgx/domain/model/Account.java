@@ -17,10 +17,10 @@ public class Account {
   @Column(nullable = false)
   private String agency;
 
-  @Column(precision = 2, scale = 13)
+  @Column(precision = 13, scale = 2)
   private BigDecimal balance;
 
-  @Column(precision = 2, scale = 13, name = "additional_limit")
+  @Column(precision = 13, scale = 2, name = "additional_limit")
   private BigDecimal limit;
 
   public Long getId() {
